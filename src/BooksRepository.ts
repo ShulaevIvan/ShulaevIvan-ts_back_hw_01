@@ -1,15 +1,15 @@
 import Book from "../types/Book";
 
 abstract class BooksRepository {
-    static createBook(book: Book) : void {};
+    abstract createBook(book: Book) : void;
 
-    static getBook(id: number): Book | null { return null };
+    abstract getBook(id: number): Book | null;
 
-    static getBooks(): Book[] { return [] };
+    abstract getBooks(): Book[];
 
-    static updateBook(id: number, updatedBook: Book): void {};
+    abstract updateBook(id: number, updatedBook: Book): void;
 
-    static deleteBook(id: number): void {};
+    abstract deleteBook(id: number): void;
 };
 
 // class BookApi extends BooksRepository {

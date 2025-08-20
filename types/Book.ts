@@ -1,9 +1,9 @@
-export default interface Book {
-    title: string,
-    description: string,
-    authors: string,
-    favorite: string,
-    fileCover: string,
-    fileName: string,
-    fileBook: string
+export default interface Book  {
+    readonly title: string,
+    readonly description: string,
+    readonly authors: string,
+    readonly favorite: string,
+    readonly fileCover: string,
+    readonly fileName: string,
+    readonly fileBook: string
 };
